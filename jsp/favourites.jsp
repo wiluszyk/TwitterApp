@@ -18,7 +18,7 @@
 </nav>
 <h1>Favourite twitts list : </h1>
 <c:forEach items="${favouriteTwitts}" var="twitt">
-	<p>${twitt.message}</p>
+	<p style="overflow: auto">${twitt.message}</p>
 	<p>Created by ${twitt.userName}  on ${twitt.dateOfCreation}</p>
 	<div class="line-separator"></div>
 </c:forEach>
